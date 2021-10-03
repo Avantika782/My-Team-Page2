@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins',sans-serif;
+    font-size: 10px;
+    background-color: #fafafa;
+}
+
+.container{
+    margin: auto;
+    max-width: 1440px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 48px;
+}
+
+.container .header h1{
+    font-family: 'PT Serif', serif;
+    font-size: 3.6rem;
+}
+
+.container .header .text{
+    font-size: 1.8rem;
+    max-width: 440px;
+}
+
+.container .header .text h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    padding: 72px 150px;
+}
+
+.image{
+    width: 265px;
+    position: relative;
+}
+
+.image:nth-child(3n+2){
+    margin-top: 100px;
+}
+
+.image img{
+    width: 238px;
+}
+
+.job{
+    position: absolute;
+    right: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+footer{
+    margin-bottom: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #a9a9a9;
+}
+
+footer a{
+    text-decoration: none;
+    color: #a9a9a9;
+}
+
+footer a:hover{
+    color: #000;
+    transition: all 0.3s;
+}
+
+@media(max-width: 1024px){
+    .images{
+        padding: 56px;        
+    }
+}
+
+@media(max-width: 768px){
+    .header{
+        flex-direction: column;
+        margin: 0 36px;
+    }
+
+    .text h2{
+        margin-top: 38px;
+        margin-bottom: 10px;
+    }
+
+    .images{
+        grid-template-columns: repeat(2,1fr);
+        padding: 48px;
+    }
+
+    .image:nth-child(3n+2){
+        margin-top: unset;
+    }
+
+    .image:nth-child(odd){
+        row-gap: 64px;
+    }
+
+    .image:nth-child(even){
+        margin-top: 64px;
+    }
+}
+
+@media (max-width:475px) {
+    .header{
+        margin: 0;
+        padding: 24px;
+    }
+
+    .text{
+        max-width: 333px;
+    }
+
+    .text{
+        max-width: 333px;
+    }
+
+    .text p{
+        font-size: 1.4rem;
+    }
+
+    .images{
+        margin-bottom: 24px;
+        padding: 24px
+    }
+
+    .image{
+        width: 154px;
+    }
+
+    .image img{
+        width: 138px;
+    }
+
+    .image .job{
+        font-size: 1rem;
+    }
+
+    .image .name{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 375px){
+    .header,.images{
+        padding: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container .header h1 {
+      font-size: 3.2rem;
+    }
+  
+    .container .images {
+      column-gap: 12px;
+    }
+  
+    .container .images .image {
+      width: 142px;
+    }
+  
+    .container .images .image img {
+      width: 128px;
+    }
+  
+    footer {
+      margin-bottom: 32px;
+      font-size: 1.2rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
